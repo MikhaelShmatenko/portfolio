@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+tmp/
+out-tsc/
+bazel-out/
+.angular/cache/
+.sass-cache/
+
+# Environment variables / secrets
+.env
+.env.local
+.env.*.local
+frontend/src/environments/environment.ts
+frontend/src/environments/environment.development.ts
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing / coverage
+coverage/
+__screenshots__/
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/*
+
+# System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Misc
+connect.lock
+libpeerconnection.log
+testem.log
+typings/
