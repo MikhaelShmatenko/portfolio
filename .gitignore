@@ -7,7 +7,7 @@ build/
 tmp/
 out-tsc/
 bazel-out/
-.angular/cache/
+**/.angular/cache/
 .sass-cache/
 
 # Environment variables / secrets
@@ -35,12 +35,12 @@ __screenshots__/
 *.launch
 .settings/
 *.sublime-workspace
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/mcp.json
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+!**/.vscode/mcp.json
 .history/*
 
 # System files
