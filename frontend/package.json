@@ -5,10 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:perf": "ng build --configuration production,local-test",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:frontend": "node dist/frontend/server/server.mjs",
-    "a11y": "node .claude/skills/a11y-audit/scripts/scan.mjs"
+    "a11y": "node .claude/skills/a11y-audit/scripts/scan.mjs",
+    "perf": "node .claude/skills/perf-audit/scripts/scan.mjs"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
@@ -34,7 +36,9 @@
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "chrome-launcher": "^1.2.1",
     "jsdom": "^28.0.0",
+    "lighthouse": "^13.4.1",
     "playwright": "^1.62.1",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
