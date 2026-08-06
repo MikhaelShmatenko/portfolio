@@ -60,6 +60,11 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "local-test": {
+              "security": {
+                "allowedHosts": ["localhost"]
+              }
             }
           },
           "defaultConfiguration": "production"
