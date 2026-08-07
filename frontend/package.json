@@ -10,7 +10,9 @@
     "test": "ng test",
     "serve:ssr:frontend": "node dist/frontend/server/server.mjs",
     "a11y": "node .claude/skills/a11y-audit/scripts/scan.mjs",
-    "perf": "node .claude/skills/perf-audit/scripts/scan.mjs"
+    "perf": "node .claude/skills/perf-audit/scripts/scan.mjs",
+    "secrets": "secretlint \"**/*\"",
+    "headers": "node .claude/skills/security-audit/scripts/headers-check.mjs"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
@@ -35,6 +37,7 @@
     "@angular/cli": "^22.0.7",
     "@angular/compiler-cli": "^22.0.0",
     "@axe-core/playwright": "^4.12.1",
+    "@secretlint/secretlint-rule-preset-recommend": "^13.0.4",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
@@ -44,6 +47,7 @@
     "playwright": "^1.62.1",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
+    "secretlint": "^13.0.4",
     "tailwindcss": "^4.1.12",
     "typescript": "~6.0.2",
     "vitest": "^4.0.8"
